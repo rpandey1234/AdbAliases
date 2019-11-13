@@ -14,7 +14,7 @@ alias atext='adb shell input text'
 alias aback='adb shell input keyevent KEYCODE_BACK'
 
 # Given a username/password form, log in with the given user. Focus should be on the username edit text.
-# Usage: $ adblogin john
+# Usage: $ alogin john
 alogin() {
   atext "$1" && adb shell input keyevent KEYCODE_TAB && atext password
 }
